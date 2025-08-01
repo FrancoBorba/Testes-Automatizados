@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="br.com.franco.FooBarTest" time="0.047" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="br.com.franco.math.SimpleMathTest" time="0.035" tests="7" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -58,8 +58,20 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Test" classname="br.com.franco.FooBarTest" time="0.025">
-    <system-out><![CDATA[Hello junit5
-]]></system-out>
+  <testcase name="testSum" classname="br.com.franco.math.SimpleMathTest" time="0.007"/>
+  <testcase name="testMean" classname="br.com.franco.math.SimpleMathTest" time="0.002"/>
+  <testcase name="testDivision_When_FirstNumberIsDividedByZero_ShouldThrowArithmeticException" classname="br.com.franco.math.SimpleMathTest" time="0.008">
+    <failure type="org.opentest4j.AssertionFailedError&#10;	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java"><![CDATA[org.opentest4j.AssertionFailedError
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:34)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:119)
+	at br.com.franco.math.SimpleMathTest.testDivision_When_FirstNumberIsDividedByZero_ShouldThrowArithmeticException(SimpleMathTest.java:72)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
   </testcase>
+  <testcase name="testMultilication" classname="br.com.franco.math.SimpleMathTest" time="0.001"/>
+  <testcase name="testDivision" classname="br.com.franco.math.SimpleMathTest" time="0.001"/>
+  <testcase name="testSquareRoot" classname="br.com.franco.math.SimpleMathTest" time="0.002"/>
+  <testcase name="testSubtraction" classname="br.com.franco.math.SimpleMathTest" time="0.001"/>
 </testsuite>
