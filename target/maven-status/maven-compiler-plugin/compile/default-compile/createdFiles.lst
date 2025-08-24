@@ -1,2 +1,10 @@
 br\com\franco\math\SimpleMath.class
+br\com\franco\busines\BusinesCourse.class
 br\com\franco\Main.class
+br\com\franco\model\Person.class
+br\com\franco\model\Order.class
+br\com\franco\service\PersonService.class
+br\com\franco\model\MyUtils.class
+br\com\franco\interfaces\IPersonService.class
+br\com\franco\interfaces\ICourseService.class
+br\com\franco\service\OrderService.class

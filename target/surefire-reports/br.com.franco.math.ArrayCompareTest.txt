@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: br.com.franco.math.ArrayCompareTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 39.70 s <<< FAILURE! -- in br.com.franco.math.ArrayCompareTest
+br.com.franco.math.ArrayCompareTest.testSortPerfomarce -- Time elapsed: 39.69 s <<< ERROR!
+java.util.concurrent.TimeoutException: testSortPerfomarce() timed out after 1 second
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

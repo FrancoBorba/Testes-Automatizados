@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: br.com.franco.busines.CourseBusinesMockTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.066 s <<< FAILURE! -- in br.com.franco.busines.CourseBusinesMockTest
+br.com.franco.busines.CourseBusinesMockTest.testCoursesRelatedToSpring_When_UsingAStub -- Time elapsed: 3.988 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "allCourses" is null
+	at br.com.franco.busines.BusinesCourse.retriveCoursesRelatedToSpring(BusinesCourse.java:25)
+	at br.com.franco.busines.CourseBusinesMockTest.testCoursesRelatedToSpring_When_UsingAStub(CourseBusinesMockTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

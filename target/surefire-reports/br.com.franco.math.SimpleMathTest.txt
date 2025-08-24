@@ -1,13 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: br.com.franco.math.SimpleMathTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.035 s <<< FAILURE! -- in br.com.franco.math.SimpleMathTest
-br.com.franco.math.SimpleMathTest.testDivision_When_FirstNumberIsDividedByZero_ShouldThrowArithmeticException -- Time elapsed: 0.008 s <<< FAILURE!
-org.opentest4j.AssertionFailedError
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:34)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:119)
-	at br.com.franco.math.SimpleMathTest.testDivision_When_FirstNumberIsDividedByZero_ShouldThrowArithmeticException(SimpleMathTest.java:72)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s -- in br.com.franco.math.SimpleMathTest

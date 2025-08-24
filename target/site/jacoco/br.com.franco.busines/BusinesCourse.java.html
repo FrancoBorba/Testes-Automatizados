@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BusinesCourse.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">automated-test-with-java</a> &gt; <a href="index.source.html" class="el_package">br.com.franco.busines</a> &gt; <span class="el_source">BusinesCourse.java</span></div><h1>BusinesCourse.java</h1><pre class="source lang-java linenums">package br.com.franco.busines;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.franco.interfaces.ICourseService;
+
+// SUT -&gt; System (method ) under test
+public class BusinesCourse   {
+  
+  // Course service is a dependency
+  private ICourseService courseService;
+
+  // Injecting the dependency
+<span class="fc" id="L15">  public BusinesCourse(ICourseService courseService) {</span>
+<span class="fc" id="L16">    this.courseService = courseService;</span>
+<span class="fc" id="L17">  }</span>
+
+  public List&lt;String&gt; retriveCoursesRelatedToSpring(String student){
+    
+<span class="fc" id="L21">    var filteredCourses = new ArrayList&lt;String&gt;();</span>
+
+<span class="fc" id="L23">    var allCourses = courseService.retrieveCourses(student);</span>
+
+<span class="fc bfc" id="L25" title="All 2 branches covered.">    for (String course : allCourses) {</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">        if(course.contains(&quot;Spring&quot;)){</span>
+<span class="fc" id="L27">          filteredCourses.add(course);</span>
+        }
+<span class="fc" id="L29">    }</span>
+
+<span class="fc" id="L31">    return filteredCourses;</span>
+  }
+
+    public void deleteCoursesRelatedToSpring(String student){
+    
+    
+
+<span class="fc" id="L38">    var allCourses = courseService.retrieveCourses(student);</span>
+
+<span class="fc bfc" id="L40" title="All 2 branches covered.">    for (String course : allCourses) {</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">        if(!course.contains(&quot;Spring&quot;)){</span>
+<span class="fc" id="L42">          courseService.deleteCourse(course);</span>
+        }
+<span class="fc" id="L44">    }</span>
+<span class="fc" id="L45">  }</span>
+
+  
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>
